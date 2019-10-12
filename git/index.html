@@ -166,10 +166,48 @@
 </blockquote>
 <h3 id="命令行界面（高效快速）"><a href="#命令行界面（高效快速）" class="headerlink" title="命令行界面（高效快速）"></a>命令行界面（高效快速）</h3><ul>
 <li>安装git</li>
+<li>初始化git仓库</li>
 </ul>
 <figure class="highlight powershell"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 切换到想要放项目的目录</span></span><br><span class="line">cd D:\</span><br><span class="line"><span class="comment"># 建立项目文件夹</span></span><br><span class="line">mkdir myRepo</span><br><span class="line"><span class="comment"># 初始化git仓库</span></span><br><span class="line">git init</span><br></pre></td></tr></table></figure>
 
-<h1 id="🚧🚧🚧正在施工中🚧🚧🚧"><a href="#🚧🚧🚧正在施工中🚧🚧🚧" class="headerlink" title="🚧🚧🚧正在施工中🚧🚧🚧"></a>🚧🚧🚧正在施工中🚧🚧🚧</h1><h1 id="游客止步（长时间没更新请把作者打醒谢谢）"><a href="#游客止步（长时间没更新请把作者打醒谢谢）" class="headerlink" title="游客止步（长时间没更新请把作者打醒谢谢）"></a>游客止步（长时间没更新请把作者打醒谢谢）</h1><h1 id="Ref"><a href="#Ref" class="headerlink" title="Ref"></a>Ref</h1><ol>
+<ul>
+<li>添加远程仓库地址，分配仓库名<code>origin</code>到地址``</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br></pre></td><td class="code"><pre><span class="line">git remote add origin git@github.com:seumsc/playground.git</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>推拉操作</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 从远程分支拉取</span></span><br><span class="line">git pull [form name] [branchname]</span><br><span class="line"><span class="comment"># 推送到远程分支</span></span><br><span class="line">git push [--<span class="built_in">set</span>-upstream] [form name] [branchname]</span><br><span class="line"><span class="comment"># 查看历史</span></span><br><span class="line">git <span class="built_in">log</span></span><br><span class="line"><span class="comment"># 查看更改详细信息</span></span><br><span class="line">git show</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>储存区操作</li>
+</ul>
+<figure class="highlight bash"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br></pre></td><td class="code"><pre><span class="line"><span class="comment"># 添加文件到storged</span></span><br><span class="line">git add [file]</span><br><span class="line"><span class="comment"># 添加所有文件</span></span><br><span class="line">git add .</span><br><span class="line"><span class="comment"># 从git删除某些文件</span></span><br><span class="line">git rm [--cached][filename]</span><br><span class="line"><span class="comment"># 产生一个提交</span></span><br><span class="line">git commit [-m [message]]</span><br></pre></td></tr></table></figure>
+
+<ul>
+<li>更多命令请参考官方文档</li>
+</ul>
+<h1 id="文件状态"><a href="#文件状态" class="headerlink" title="文件状态"></a>文件状态</h1><p><img src="/git/1570869077617.png" alt="1570869077617"></p>
+<h3 id="git的四个文件状态"><a href="#git的四个文件状态" class="headerlink" title="git的四个文件状态"></a>git的四个文件状态</h3><ul>
+<li>Untracked<ul>
+<li>不在git管理范围内</li>
+</ul>
+</li>
+<li>Unmodified<ul>
+<li>已被git管理，目前没有被改动</li>
+</ul>
+</li>
+<li>Modified<ul>
+<li>已被git管理，并且发生了改动</li>
+</ul>
+</li>
+<li>Staged<ul>
+<li>改动文件/新增文件被合入commit中（文件只会在这里存续一瞬间，完成commit之后立即转入Unmodified）</li>
+</ul>
+</li>
+</ul>
+<h1 id="Ref"><a href="#Ref" class="headerlink" title="Ref"></a>Ref</h1><ol>
 <li><a href="/https://git-scm.com/book/en/v2">git官方文档</a></li>
 </ol>
 
