@@ -1,13 +1,13 @@
 ---
 title: 技术沙龙时间表和预告
-date: 2020-03-02 00:00:00
 tags:
     - salon
 ---
 | 日期       | 时间  | 主题                   | 地点     | 备注                                                         | 主讲人      |
 | ---------- | ----- | ---------------------- | -------- | ------------------------------------------------------------ | ----------- |
-| 2020/04/05 | - | MS Learn学习挑战赛week2 | msLearn | - | - |
-| 2020/03/29 | - | MS Learn学习挑战赛week1 | msLearn | - | - |
+| 2020/04/11 | - | MS Learn学习挑战赛week3 | msLearn | [日更榜单](https://aka.ms/MSclubLearnboard) | - |
+| 2020/04/05 | - | MS Learn学习挑战赛week2 | msLearn | [日更榜单](https://aka.ms/MSclubLearnboard) | - |
+| 2020/03/29 | - | MS Learn学习挑战赛week1 | msLearn | [日更榜单](https://aka.ms/MSclubLearnboard) | - |
 | 2020/03/22 | 20:00 | 前端入门讲解 | 线上 | - | Amy |
 | 2020/03/15 | 20:00 | 刷题企划试运行2020-1Weekly | bilibili、vJudge |                                                          | Hanyuu           |
 | 2020/03/01 | 20:00 | DevOps, CICD简介       | bilibili | 线上、[录档](https://www.bilibili.com/video/av92987568/)、[资料](https://hanyuulu.github.io/se/cicd) | Hanyuu      |
