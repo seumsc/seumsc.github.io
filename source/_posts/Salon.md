@@ -5,6 +5,8 @@ tags:
 ---
 | 日期       | 时间  | 主题                   | 地点     | 备注                                                         | 主讲人      |
 | ---------- | ----- | ---------------------- | -------- | ------------------------------------------------------------ | ----------- |
+| 五一假期（待定） | - | PowerShell入门 | bilibili |  | - |
+| 2020/04/18 | - | MS Learn学习挑战赛week4 | msLearn | [日更榜单](https://aka.ms/MSclubLearnboard) | - |
 | 2020/04/11 | - | MS Learn学习挑战赛week3 | msLearn | [日更榜单](https://aka.ms/MSclubLearnboard) | - |
 | 2020/04/05 | - | MS Learn学习挑战赛week2 | msLearn | [日更榜单](https://aka.ms/MSclubLearnboard) | - |
 | 2020/03/29 | - | MS Learn学习挑战赛week1 | msLearn | [日更榜单](https://aka.ms/MSclubLearnboard) | - |
