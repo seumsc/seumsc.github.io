@@ -9,13 +9,13 @@ tags:
 
 * 招新时间
   *  国庆期间
-* 下载[申请表](https://github.com/seumsc/resource/raw/master/recruit/2020微软学生俱乐部招新申请表.docx)并填写
+* 下载[申请表](https://github.com/seumsc/seumsc.github.io/raw/src/source/_posts/recruit/2020%E5%BE%AE%E8%BD%AF%E5%AD%A6%E7%94%9F%E4%BF%B1%E4%B9%90%E9%83%A8%E6%8B%9B%E6%96%B0%E7%94%B3%E8%AF%B7%E8%A1%A8.docx)并填写
 * 发送邮件至我们的官方邮箱：[MSC_SEU@hotmail.com](mailto:MSC_SEU@hotmail.com)
 * 锵锵~报名流程完毕！
 
 ### 招新群
 
-![qrcode](/qrcode_1601034761436.jpg)
+![qrcode](/recruit/qrcode_1601034761436.jpg)
 
 ### 简介
 
@@ -78,6 +78,6 @@ tags:
 
   * 社团团宠——狸花猫和他的朋友们
 
-![1563627664634](/1563627664634.png)
+![1563627664634](/recruit/1563627664634.png)
 
-![1563626997143](/1563626997143.png)
+![1563626997143](/recruit/1563626997143.png)
