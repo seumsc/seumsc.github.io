@@ -8,10 +8,10 @@ tags:
 ### 报名流程
 
 * 招新时间
-  * 百团大战左右时间
-* 下载[申请表](https://github.com/seumsc/seumsc.github.io/raw/src/source/_posts/recruit/2022微软学生俱乐部招新申请表.docx)并填写
-* 发送邮件至邮箱：[MSC_SEU@hotmail.com](mailto:MSC_SEU@hotmail.com)
-* 锵锵~报名流程完毕！
+  * 线下：百团大战左右
+  * 线上：
+    * 点击[此处](https://forms.office.com/Pages/ResponsePage.aspx?id=DQSIkWdsW0yxEjajBLZtrQAAAAAAAAAAAAN__jKLA4pUMzlPNkhZQjA3R1UzVUlGVUdPQzRQSDhZSS4u)填写表格
+    * 锵锵~报名流程完毕！
 
 ### 招新群
 
