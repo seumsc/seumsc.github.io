@@ -1,5 +1,5 @@
 # Logo
-logo_image_source: https://raw.githubusercontent.com/seumsc/pages/master/res/MSCWeb.png
+logo_image_source: https://i.dawnlab.me/0dc314d22f04b05eaab60fd0e59c354b.png
 
 # Index Page
 index_banner_text: Microsoft Student Club @ SEU ~
@@ -24,7 +24,7 @@ archive_date_format: MMM YYYY
 archive_font_awesome_icon_css: fa-folder-open
 
 # About Widget
-about_widget_avatar_url: https://raw.githubusercontent.com/seumsc/pages/master/res/MSCWeb.png
+about_widget_avatar_url: https://i.dawnlab.me/0dc314d22f04b05eaab60fd0e59c354b.png
 about_widget_text: "这里是位于东南大学九龙湖校区的微软学生俱乐部，我们欢迎每个感兴趣的同学参与活动，予力众生，成就非凡。"
 
 

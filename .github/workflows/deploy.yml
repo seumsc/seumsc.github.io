@@ -1,23 +1,37 @@
 name: CI
 
 on:
-    push:
-        branches:
-            - src
+  push:
+    branches:
+      - src
 
 jobs:
   build:
-
     runs-on: ubuntu-latest
 
     steps:
-    - uses: actions/checkout@v2
-    - name: Hexo Action
-      uses: sma11black/hexo-action@v1.0.0
-      with:
-        # Github user name
-        user_name: HanyuuLu # default is 
-        # Github email
-        user_email: HanyuuFurude@outlook.com # default is 
-        # The deploy key for Github Pages repo
-        deploy_key: ${{ secrets.DEPLOY_KEY }}
+      - name: Checkout
+        uses: actions/checkout@v1
+        with:
+          submodules: true # Checkout private submodules(themes or something else).
+      
+      # Caching dependencies to speed up workflows. (GitHub will remove any cache entries that have not been accessed in over 7 days.)
+      - name: Cache node modules
+        uses: actions/cache@v1
+        id: cache
+        with:
+          path: node_modules
+          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          restore-keys: |
+            ${{ runner.os }}-node-
+
+      - name: Install Dependencies
+        if: steps.cache.outputs.cache-hit != 'true'
+        run: npm ci
+
+      - name: Hexo Action
+        uses: sma11black/hexo-action@v1.0.4
+        with:
+          # The deploy key for Github Pages repo
+          deploy_key: ${{ secrets.DEPLOY_KEY }}
+          commit_msg: ${{ github.event.head_commit.message }}
