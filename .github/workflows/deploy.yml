@@ -11,13 +11,13 @@ jobs:
 
     steps:
       - name: Checkout
-        uses: actions/checkout@v1
+        uses: actions/checkout@v3
         with:
           submodules: true # Checkout private submodules(themes or something else).
       
       # Caching dependencies to speed up workflows. (GitHub will remove any cache entries that have not been accessed in over 7 days.)
       - name: Cache node modules
-        uses: actions/cache@v1
+        uses: actions/cache@v3
         id: cache
         with:
           path: node_modules
