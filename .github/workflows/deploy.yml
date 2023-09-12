@@ -5,6 +5,11 @@ on:
     branches:
       - src
 
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -13,25 +18,38 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v3
         with:
-          submodules: true # Checkout private submodules(themes or something else).
-      
-      # Caching dependencies to speed up workflows. (GitHub will remove any cache entries that have not been accessed in over 7 days.)
-      - name: Cache node modules
-        uses: actions/cache@v3
-        id: cache
+          submodules: true # Checkout private submodules (themes or something else).
+      - name: Use Node.js 16.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: '16'
+      - name: Cache NPM dependencies
+        uses: actions/cache@v2
         with:
           path: node_modules
-          key: ${{ runner.os }}-node-${{ hashFiles('**/package-lock.json') }}
+          key: ${{ runner.OS }}-npm-cache
           restore-keys: |
-            ${{ runner.os }}-node-
-
+            ${{ runner.OS }}-npm-cache
       - name: Install Dependencies
-        if: steps.cache.outputs.cache-hit != 'true'
-        run: npm ci
-
-      - name: Hexo Action
-        uses: sma11black/hexo-action@v1.0.4
+        run: npm install
+      - name: Build Hexo
+        run: npm run build
+      - name: Setup Pages
+        id: pages
+        uses: actions/configure-pages@v3
+      - name: Upload pages artifact
+        uses: actions/upload-pages-artifact@v2
         with:
-          # The deploy key for Github Pages repo
-          deploy_key: ${{ secrets.DEPLOY_KEY }}
-          commit_msg: ${{ github.event.head_commit.message }}
+          path: public/
+
+  deploy:
+    environment:
+      name: github-pages
+      url: ${{ steps.deployment.outputs.page_url }}
+    needs: build
+    runs-on: ubuntu-latest
+    name: Deploy
+    steps:
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v2
